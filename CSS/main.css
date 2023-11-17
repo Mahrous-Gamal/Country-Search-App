@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(250, 244, 244);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  background-image: url("../Images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 5;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  z-index: 500;
+}
+
+.card {
+  width: 60%;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #d7d3cf;
+  opacity: .8;
+  z-index: 500;
+}
+
+.card .card-header {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  z-index: 500;
+
+}
+
+.card .card-header .group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card .card-header .group input {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 14px;
+  text-transform: capitalize;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.card .card-header .group .custom-select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 20px;
+}
+
+.card .card-header .group .custom-select select {
+  outline: none;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  position: relative;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.card .card-header .group .custom-select::after {
+  content: "";
+  color: #fff;
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: #000 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.card .card-header .group .image {
+  width: 10px;
+  height: 40px;
+  border: 1px solid blue;
+}
+
+.info {
+  width: 60%;
+  margin-bottom: 10px;
+  z-index: 500;
+
+
+}
+
+.content {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #d7d3cf;
+  opacity: .8;
+}
+
+.content .header {
+  text-align: center;
+}
+
+.content .header .image {
+  width: 50%;
+}
+
+.content .header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.content ul li {
+  padding: 0;
+}
+
+.content ul li {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.content ul li h3 {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  background-color: #f7f7f7;
+  padding: 5px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.content ul li span {
+  color: #555;
+}
+
+.error {
+  background-color: #f3b9b9e8;
+  color: #cf2323;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .card {
+    width: 90%;
+  }
+
+  .info {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 25px;
+  }
+
+}
